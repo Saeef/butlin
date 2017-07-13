@@ -1,6 +1,6 @@
 # [Butlin's]  :rocket:
 Test Plan 10514
-LMW:Mobile:Sitewide:Newsletter Pop Up
+LMW:Mobile > Sitewide > Newsletter Pop-Up
 
 ### background  :bell:
 Similar tests on Butlins have shown that a pop up on the brochure pages offering an incentive.    
@@ -13,10 +13,10 @@ we will improve its visibility and also encourage users to sign up to receive a 
 
 
 ### targeting :boom:
-https://m.bigweekends.com/. (substring match)
-https://m.butlins.com etc
+https://m.bigweekends.com/. (substring match).      
+https://m.butlins.com etc.       
 URL's to exclude:    
-https://mobile.butlins.com/sw/ - substring match
+https://mobile.butlins.com/sw/ - substring match.          
 
 ### devices :phone:      
 mobile only (IOS, Android)
