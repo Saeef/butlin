@@ -1,6 +1,6 @@
 # [Butlin's]  :rocket:
 Test Plan 10514
-LMW:Mobile > Sitewide > Newsletter Pop-Up
+LMW:Mobile :dragon: Sitewide :dragon: Newsletter Pop-Up
 
 ### background  :bell:
 Similar tests on Butlins have shown that a pop up on the brochure pages offering an incentive.    
