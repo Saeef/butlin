@@ -1,27 +1,27 @@
 # [Butlin's]  :rocket:
 Test Plan 10514
-LMW Mobile :dragon: Sitewide :dragon: Newsletter Pop-Up. :bowtie:
+LMW Mobile <kbd>></kbd> Sitewide :dragon: Newsletter Pop-Up. :mushroom:
 
-### background  :bell:
+### background &nbsp; :bell:
 Similar tests on Butlins have shown that a pop up on the brochure pages offering an incentive.    
 increased newsletter sign ups through mobile site by 2600%
 
 
-### objective :book:
+### objective &nbsp; :book:
 By presenting the newsletter signup in a pop up and offering an incentive to returning visitors     
 we will improve its visibility and also encourage users to sign up to receive a discount.
 
 
-### targeting :boom:
-https://m.bigweekends.com/. (substring match).      
-https://m.butlins.com etc.       
-URL's to exclude:    
-https://mobile.butlins.com/sw/ - substring match.          
+### targeting &nbsp; :boom:
+* https://m.bigweekends.com/. (substring match).      
+* https://m.butlins.com etc.       
+* URL's to exclude:    
+* https://mobile.butlins.com/sw/ - substring match.          
 
-### devices :phone:      
+### devices &nbsp; :phone:      
 mobile only (IOS, Android)
 
-### Variation: :boom:
+### Variation: &nbsp; :boom:
 - Font League Gothic Regular
 - Black text NEWS & OFFERS
 - xxxxx: Live Music Weekend. (Save on your next 'xxxxx' when you sign up....)
@@ -31,7 +31,7 @@ mobile only (IOS, Android)
 - xxxxxx: Live Music Weekend  (...off your next Butlin's break)
 
 
-### other   :ledger:
+### other  &nbsp; :ledger:
 - Use pop up from Butlin's test as a template with following changes:
 -	News and Offers heading text black instead of red
 -  Butlin's copy changed to Live music weekend
@@ -39,7 +39,7 @@ mobile only (IOS, Android)
 -  Black CTA instead of Red
 
 
-### notes :snake:      
+### notes &nbsp; :snake:      
 
 
 
@@ -59,8 +59,3 @@ mobile only (IOS, Android)
 
 
 
-
-
-
-
-# butlin
