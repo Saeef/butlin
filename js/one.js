@@ -33,7 +33,7 @@ externalScripts();
     
     pgCssDesktop: function() {
             console.info('%c pgCssDesktop \u221a', 'background:blue;color:white;');
-            var mainCss = ' .modal {position:absolute; margin:0; border-radius:5px; box-shadow: rgba(237, 237, 237, 0.15) -10px 3px 10px 3px, rgba(138, 136, 161, 0.19) 0px 6px 20px 0px; box-sizing:border-box; background: rgba(255,255,255,1); margin:0; border: 1px groove rgba(54, 48, 20, 0.45);} #overlay { position: absolute; top: 0; left: 0; background: rgba(0,0,0,.7); cursor: pointer; width: 100%; height: 100%; }  ';
+            var mainCss = ' .modal {position:absolute; margin:0; border-radius:5px; box-shadow: rgba(237, 237, 237, 0.15) -10px 3px 10px 3px, rgba(138, 136, 161, 0.19) 0px 6px 20px 0px; box-sizing:border-box; background: rgba(255,255,255,1); margin:0; border: 1px groove rgba(54, 48, 20, 0.45);} #overlay { position: absolute; top: 0; left: 0; background: rgba(0,0,0,.7); z-index: 500; cursor: pointer; width: 100%; height: 100%; } button.modal-close {cursor: pointer; }  ';
             var head = document.getElementsByTagName('head')[0];
             function addcss(css) {
                 var s = document.createElement('style');
@@ -61,9 +61,14 @@ externalScripts();
             //close modal click event
             $close.on('click', function(e) {
                e.preventDefault();
-               $modal.detach();
+               $modal.animate().detach();
                clay = document.getElementById('overlay'),
                clay ? clay.parentElement.removeChild(clay) : false;
+               //unlock-body
+               $('body').css({
+                    'max-height' : '',
+                    'overflow'   : ''
+                });
 
 
             });//close
@@ -85,6 +90,11 @@ externalScripts();
                 //center horizontally
                 left: left + $(window).scrollLeft(),
                 'z-index': 1000
+            });
+            //lock-body
+            $('body').css({
+                'max-height' : window.outerHeight,
+                'overflow'   : 'hidden'
             });
             
             
@@ -117,16 +127,15 @@ externalScripts();
             $modal.detach();
             $(window).off('resize', this.center);
 
-
-
         },//close
 
         overlay: function() {
             console.info('%c overlay \u221a', 'background:blue;color:white;');
             var olay = document.createElement("div");
+            var sele = document.querySelector('body > .main_header');
             //overlay&styles
             olay.id="overlay", 
-            document.body.appendChild(olay);
+            sele.parentElement.insertBefore(olay,sele);
 
         }//overlay
 
@@ -142,7 +151,7 @@ externalScripts();
         //try {
         setTimeout(function() {
             SL.andRedEyelikeButlins.init();
-        },1500);    
+        },65);    
             //SL.andRedEyelikeButlins.init();
         //} 
         //catch (err) {
