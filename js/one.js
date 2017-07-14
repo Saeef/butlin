@@ -19,7 +19,7 @@ externalScripts();
 
 (function(andRedEyelikeButlins, undefined) {
     var SL = {};
-    var $modal,$windowHeight,$content0,$content1,$moDesc1,$moDesc0,$moTitle0,$moTitle1,$close;
+    var $modal,$windowHeight,$content0,$form0,$moDesc0,$moTitle0,$close,$extralinks;
     SL.andRedEyelikeButlins = {
         init: function() {
         console.info('%c init \u221a', 'background:blue;color:white;'); 
@@ -35,7 +35,7 @@ externalScripts();
     
     pgCssDesktop: function() {
             console.info('%c pgCssDesktop \u221a', 'background:blue;color:white;');
-            var mainCss = ' .modal {position:absolute; margin:0; border-radius:5px; box-shadow: rgba(237, 237, 237, 0.15) -10px 3px 10px 3px, rgba(138, 136, 161, 0.19) 0px 6px 20px 0px; box-sizing:border-box; background: rgba(255,255,255,1); margin:0; border: 1px groove rgba(54, 48, 20, 0.45);} #overlay { position: absolute; top: 0; left: 0; background: rgba(0,0,0,.7); z-index: 500; cursor: pointer; width: 100%; height: 100%; } button.modal-close {cursor: pointer; } .modal-content .m-title {font-family:Arial; color: rgb(221,38,45); font-size:1.6em; line-height:160%;} .modal-content .m-desc { line-height:140%; color:rgb(101,101,101); font-size:12px; margin:5px 0px; }';
+            var mainCss = '@font-face {font-family:"MYFONT"; src: url(/h5/images/font%2FFrontage-Bold.w_1388678922000hc.otf) format("truetype"); }  .modal {width:90% !important; font-family: "MYFONT", Arial, sans-serif;  position:absolute; margin:0; border-radius:5px; box-shadow: rgba(237, 237, 237, 0.15) -10px 3px 10px 3px, rgba(138, 136, 161, 0.19) 0px 6px 20px 0px; box-sizing:border-box; background: rgba(255,255,255,1); margin:0; border: 1px groove rgba(54, 48, 20, 0.45);} #overlay { position: absolute; top: 0; left: 0; background: rgba(0,0,0,.7); z-index: 500; cursor: pointer; width: 100%; height: 100%; } button.modal-close {cursor: pointer; } .modal-content .m-title {font-family:"MYFONT", Arial, sans-serif; color: rgb(22,22,22); font-size:1.6em; line-height:160%;} .modal-content .m-desc { font-family:"MYFONT", Arial, sans-serif;  line-height:140%; color:rgb(101,101,101); font-size:8px; margin:5px 0px; } .modal-content {text-align:center; padding:25px 25px;} .closeModal{color:#000;position:absolute;right:5px;top:5px;font-size:22px;border-radius:50%;width:22px;height:22px;line-height:22px;cursor:pointer}.closeModal:hover,.closeModal:focus{color:#000;text-decoration:none} ';
             var head = document.getElementsByTagName('head')[0];
             function addcss(css) {
                 var s = document.createElement('style');
@@ -57,33 +57,48 @@ externalScripts();
         buildMO: function() {
             console.info('%c buildMO \u221a', 'background:blue;color:white;');
             var clay;
-            $modal = $('<div class="modal" />');
+            $modal = $('<div id="newsOffers" class="modal"></div>');
+
+            $content0 = $(' <div class="modal-content only-v1"> ');
+
+            $close0 = $('<span class="closeModal">x</span>');
+
             $moTitle0 = $('<div class="m-title">NEWS AND OFFERS</div>');
-            $content0 = $('<div class="modal-content" />');
-            $moTitle1 = $('<div class="m-title">NEWS AND OFFERS</div>');
-            $moDesc1 = $('<div class="m-desc">Enter email yeah</div>');
-            $moDesc0 = $('<div class="m-desc">Save £10 on your next break when you sign up to hear more from us. We promise not to share your details with anyone.</div>');
-            $emailForm = $(' form email ');
-            $close = $('<button role="button" class="modal-close">close</button>');
+
+            $moDesc0 = $('<div class="m-desc">Save £10 on your next Live Music Weekend when you sign up to hear about our latest news and offers.</div>');
+            
+            $form0 = $(' <form action="/h5/contacts-hub?pagePath=https%3A%2F%2Fwww.butlins.com%2Fnewsletter-signup" method="post" _lpchecked="1" target="my_iframe_feedback"> <input id="cpMain_ctlNewsletterSignupFormTcm46106357_chkButlinsOpt" type="checkbox" name="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$chkButlinsOpt" hidefocus="true" style="opacity: 0; outline: none; position: absolute; z-index: -1;"> <div class="step-1"> <div class="email-user field-form"><input type="email" name="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$tbEmail" id="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$tbEmail" value="" class="textfield w100 modal-email" placeholder="YOUR EMAIL ADDRESS" data-auto-submit="" required=""><input type="email" name="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$tbConfirmEmail" id="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$tbConfirmEmail" value="" class="textfield w100 modal-email-copy" placeholder="e.g. john@email.com" data-auto-submit=""></div><div class="clearfix"></div></div><div class="step-2"> <div class="title-user field-form"> <label for="" class="unLabel UNCapitalize">Fields marked with an asterisk (*) are mandatory</label> <ul class="user-type"> <li data-type="Mr">MR</li><li data-type="Mrs">MRS</li><li data-type="Ms">MS</li><li data-type="Master">OTHER</li></ul> <select name="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$ddlTitle" id="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$ddlTitle" class="w100 select-type" data-auto-submit=""> <option value="" selected="selected">Select</option> <option value="Mr">Mr</option> <option value="Mrs">Mrs</option> <option value="Ms">Ms</option> <option value="Miss">Miss</option> <option value="Master">Master</option> <option value="Rev">Rev</option> <option value="Dr">Dr</option> <option value="Prof">Prof</option> </select> <div class="clearfix"></div></div><div class="UNPadTop original UNErrorColor" style="display: none;"> <div class="UNPadBottom">Oops, it seems something went wrong when filling in the form.</div><ul> <li data-type="email">Enter an email address</li><li data-type="title">Please select your title</li><li data-type="first_name">Please enter your first name</li><li data-type="last_name">Please enter your last name</li></ul> </div><div class="first-name field-form"> <label for="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$tbFirstName" class="unLabel UNCapitalize">Your first name*</label><input type="text" name="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$tbFirstName" id="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$tbFirstName" value="" class="textfield w100 " placeholder="" data-auto-submit="" style="" required=""> <div class="clearfix"></div></div><div class="last-name field-form"> <label for="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$tbLastName" class="unLabel UNCapitalize">Your last name*</label><input type="text" name="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$tbLastName" id="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$tbLastName" value="" class="textfield w100 " placeholder="" data-auto-submit="" required=""> <div class="clearfix"></div></div><div class="UNPadTop unTable" style=" padding-top: 0; display: block; text-align: left; "> <input type="checkbox" name="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$chkEmailButlinsOpt" id="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$chkEmailButlinsOpt" value="true" checked="checked"></form>');
+            //signup
+            $signup = $('<label for="ctl00$cpMain$ctlNewsletterSignupFormTcm46106357$chkEmailButlinsOpt" class="unTableCell unVaM unPL10 unInlineLabel"> I want to receive updates by email </label> </div><input type="submit" value="SIGN UP" class="button w100" name="newsLetterSubmit"> <div class="clearfix"></div>');
+            $form0.append($signup);
+            $extralinks = $('<div class="extra-links"> <a href="https://www.butlins.com/splash-pages/signup-terms.aspx" class="tnc-link">Terms and Conditions</a><a href="https://m.butlins.com/h5/hub?pagePath=http%3A%2F%2Fwww.butlins.com%2Fprivacy-and-cookies%2Findex.aspx" class="privacy-link align-right">Privacy Policy</a> <div class="clearfix"></div></div></div><div class="clearfix"></div>');
+            $form0.append($extralinks);
+
             //add close button/content
-            $content0.append($moTitle0, $moDesc0, $close);
-            //$modal.append($content0, $close);
-            //close modal click event
-            $close.on('click', function(e) {
-               e.preventDefault();
-               $modal.animate().detach();
-               clay = document.getElementById('overlay'),
-               clay ? clay.parentElement.removeChild(clay) : false;
-               //unlock-body
-               $('body').css({
-                    'max-height' : '',
-                    'overflow'   : ''
-                });
+            $content0.append($close0, $moTitle0, $moDesc0, $form0);
+           
+            $close0.on('click', function(e) {
+                   e.preventDefault();
+                   $modal.animate().detach();
+                   clay = document.getElementById('overlay'),
+                   clay ? clay.parentElement.removeChild(clay) : false;
+                   //unlock-body
+                   $('body').css({
+                        'max-height' : '',
+                        'overflow'   : ''
+                    });
 
             });//close
 
+            $signup.on('click', function(e) {
+                    e.preventDefault();
+                    console.log(e);
+                    alert('sign up');
+
+            });//signup
+
             //load modale
-            this.open({content:$content0, width:350,height:450});
+            this.open({content:$content0, width:450,height:525});
 
         },//buildMO
    
