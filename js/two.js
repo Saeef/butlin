@@ -57,8 +57,7 @@ externalScripts();
                   this.validation.getReady() :  count++;  
             } while ($ !== 'undefined' && count < 1);
 
-            
-        
+                
     },
 
     
@@ -182,9 +181,6 @@ externalScripts();
             $(window).on('resize', this.centerMO);
             
             
-
-           
-
 
         },//open    
 
@@ -366,22 +362,8 @@ externalScripts();
             },false);
 
 
-
-            
-
-            
-            
-            
-
-
-
-
-
         }//onSubmit
         
-    
-
-
 
     }//validation
         
