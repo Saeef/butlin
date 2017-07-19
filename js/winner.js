@@ -236,7 +236,7 @@
         event.preventDefault();
         $('html, body').removeClass('popup-visible');
         $(".modal, .modal-content").fadeOut();
-        localStorage.setItem("popUpClosedOrSubmitted", "yes");
+        //localStorage.setItem("popUpClosedOrSubmitted", "yes");
 
         if($('.m-title').text() == "THANK YOU!"){
           window.optimizely.push(["trackEvent", "PopUp_Close_Overlay_After_form_submission"]);
@@ -339,10 +339,10 @@
 
   
   try{
-    //if(localStorage.getItem("popUpClosedOrSubmitted") !== 'yes'){
+    if(localStorage.getItem("popUpClosedOrSubmitted") !== 'yes'){
       window.BUTLINS.init();
       console.log('and 12 goes');
-    //}
+    }
   } catch(err){
     console.log('ERROR: '+ err);
   }
