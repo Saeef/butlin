@@ -2,6 +2,7 @@
 (function() {
   
   //window['optimizely'] = window['optimizely'] || [];
+  var list = document.querySelectorAll('.UNPageWrapper .pageTitle')[1];
 
   window.BUTLINS = {
     init: function() {
@@ -77,13 +78,17 @@
                   window.BUTLINS.fixPopUp();
                 }
 
-              } //else if(document.body.className == "popup-visible") {
+              } else if( list.innerText.indexOf('list') > -1   ) {
+
+              //else if(document.body.className == "popup-visible") {
                 // console.log('THANK YOU');
-                var test = document.querySelectorAll('.main .pageTitle')[1];
+                debugger;
+                console.log('heya');
+                //var list = document.querySelectorAll('.UNPageWrapper .pageTitle')[1];
+                //optimizely.getProjectId();   //577690255
 
 
-
-                else if( test.innerText.indexOf('list') > -1   ) {
+                
                 
                 
                 window.optimizely.push(["trackEvent", "successful_email_signups"]);
