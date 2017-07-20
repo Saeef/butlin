@@ -90,7 +90,7 @@
                 $('.modal-content .loader, .modal-content form').hide();
                 $('.m-title').text('THANKS FOR SIGNING UP!');
                 $('.m-desc').text('Use the code below to save £10 off your next Live Music Weekend\'s break.');
-                $('.promo-code').text('WELCOME11');
+                $('.promo-code').text('WELCOME10');
 
                 $('.thank_you-pop').show();
                 
@@ -338,7 +338,7 @@
   try{
     if(localStorage.getItem("popUpClosedOrSubmitted") !== 'yes'){
       window.BUTLINS.init();
-      console.log('and 123 goes');
+      console.log('and 125 goes');
     }
   } catch(err){
     console.log('ERROR: '+ err);
