@@ -1,0 +1,206 @@
+@font-face {
+	font-family: "MYFONT";
+	src: url(/h5/images/font%2FFrontage-Bold.w_1388678922000hc.otf) format("truetype");
+}
+
+.modal {
+	width: 90% !important;
+	font-family: "MYFONT", Arial, sans-serif;
+	position: absolute;
+	margin: 0;
+	border-radius: 5px;
+	box-shadow: rgba(237, 237, 237, 0.15) -10px 3px 10px 3px, rgba(138, 136, 161, 0.19) 0px 6px 20px 0px;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 1);
+	margin: 0;
+	border: 1px groove rgba(54, 48, 20, 0.45);
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .7);
+	z-index: 500;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+
+button.modal-close {
+	cursor: pointer;
+}
+
+.modal-content .m-title {
+	font-family: "MYFONT", Arial, sans-serif;
+	color: rgb(22, 22, 22);
+	font-size: 1.6em;
+	line-height: 160%;
+}
+
+.modal-content .m-desc {
+	font-family: "MYFONT", Arial, sans-serif;
+	line-height: 150%;
+	color: rgb(101, 101, 101);
+	font-size: .83em;
+	margin: 10px 0px 7px;
+}
+
+.modal-content {
+	text-align: center;
+	padding: 25px 25px;
+}
+
+.closeModal {
+	color: #000;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-size: 22px;
+	border-radius: 50%;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	cursor: pointer
+}
+
+.closeModal:hover,
+.closeModal:focus {
+	color: #000;
+	text-decoration: none
+}
+
+.button.nero {
+	border: 1px solid #0f171c;
+	background: #111112;
+	background: -webkit-gradient(linear, left top, left bottom, from(#282c30), to(#111112));
+	background: -webkit-linear-gradient(top, #282c30, #111112);
+	background: -moz-linear-gradient(top, #282c30, #111112);
+	background: -ms-linear-gradient(top, #282c30, #111112);
+	background: -o-linear-gradient(top, #282c30, #111112);
+	padding: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+	box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+	text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+	color: white;
+	font-size: 16px;
+	font-family: MYFONT, Arial, sans-serif;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.button.nero:focus {
+	outline: none;
+}
+
+.ele0 {
+	margin: 12px 0 20px;
+	text-align: center;
+	font-family: MYFONT, Arial, sans-serif;
+	font-size: 1.2em;
+	line-height: 140%;
+	vertical-align: initial;
+	padding: 3px 0 0 0;
+}
+
+.ele1 {
+	display: none;
+}
+
+.ele2 {
+	margin-bottom: 15px;
+}
+
+ul.user-type.ele2 li {
+	display: inline-block;
+	margin-right: 12px;
+	border: 1px solid #c7c7c7;
+	padding: 10px 23px 9px 22px;
+}
+
+ul.user-type.ele2 li:last-child {
+	margin-right: 0;
+}
+
+#nosl select {
+	display: none;
+}
+
+.ele3 {
+	margin-bottom: 20px;
+}
+
+.ele4 {
+	margin-bottom: 20px;
+}
+
+.ele5 {
+	padding-bottom: 8px;
+}
+
+label.unLabel {
+	padding-left: 3px;
+	text-align: left;
+	padding-bottom: 7px;
+}
+
+div.UNPadTop.unTable {
+	display: none;
+}
+
+#nosl label.unTableCell.unVaM.unPL10.unInlineLabel {
+	display: none;
+	width: 100%;
+}
+
+div.extra-links {
+	margin: 10px 3px 0 2px;
+}
+
+div.extra-links a {
+	text-decoration: none;
+	color: #222222
+}
+
+div.extra-links a:visited {
+	text-decoration: underline;
+}
+
+#nosl a.tnc-link {
+	float: left;
+}
+
+#nosl a.privacy-link.align-right {
+	float: right;
+}
+
+.UNPadTop.unTable input {
+	display: none;
+}
+
+.acton {
+	background: #ededed;
+	color: #222222;
+	border: 1px solid #222222 !important;
+}
+
+div.title-user.field-form ul.user-type li {
+	font-size: 11px;
+	padding: 11px 19px 9px 16px;
+}
+
+#nosl .step-2 label {
+	padding-bottom: 0;
+}
+
+#nosl ul.user-type.ele0.ele2 {
+	margin-top: 0;
+}
+
+.ele33 {
+	margin-bottom: 10px;
+}
