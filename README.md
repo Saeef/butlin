@@ -51,7 +51,13 @@ mobile only (IOS, Android)
 
 <kbd>desktop n mobile variation</kbd>  :rocket:          
 
-![](/images/xxx.png)      
+![](/images/1.png)   
+<br/>
+
+![](/images/2.png)   
+<br/>
+
+![](/images/3.png)     
 
 
 
