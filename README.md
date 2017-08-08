@@ -13,10 +13,7 @@ we will improve its visibility and also encourage users to sign up to receive a 
 
 
 ### targeting &nbsp; :boom:
-* https://m.bigweekends.com/. (substring match).      
-* https://m.butlins.com etc.       
-* URL's to exclude:    
-* https://mobile.butlins.com/sw/ - substring match.          
+* see TestPlan       
 
 ### devices &nbsp; :phone:      
 mobile only (IOS, Android)
